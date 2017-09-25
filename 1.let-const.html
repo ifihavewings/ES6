@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+	// let是只作用于所在块
+	for(let i =0;i<10;i++) {
+		console.log('I=' +i);
+	}
+	// 报错
+//	console.log(i);
+
+	// var 定义的j是全局的作用域
+	for(var j = 0; j<10 ; j++) {
+        console.log('J=' +j);
+	}
+	console.log('J = ' +j);
+
+
+
+	// 定义一个常量，无法改变值，当改变const的值得时候，会报错。
+	//应用场景：常量，var xx = require('') 的时候
+    const TI = 7;
+	// var TI = 6;
+	console.log(TI);
+
+
+
+
+</script>
